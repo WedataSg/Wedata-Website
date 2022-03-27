@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>WeData</title>
+	<link rel="icon" href="images/icon.png">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+		<!-- Chatbot Section. This area is pinned to the screen. -->
+		<div id="chatbot-container">
+			<img class="bubbleEffect" onclick="openChatbot()" id="chatbot-img" src="img/chatbox.png">
+			<div id="chatbot-div">
+			<img class="bubbleEffect" onclick="hideChatbot()" id="chatbot-minimizeButton" src="img/minimize.png">
+			<iframe id="d8iframe" src="https://trials.d8ai.ai/lc/#/iWGfkmJ0Stjk76gk74doc6wkN_Q"></iframe>
+			</div>
+		</div>
+		
+        <!-- Header Section with title -->
+        <div class="d-flex justify-content-center" style="padding: 0px; width:100%;">
+			<table style="layout: fixed; position: absolute; height: 100%; width: 100%;">
+				<tbody>
+					<tr>
+						<td class="align-middle" style="text-align:center;">
+							<h1 id="header-text">W E D A T A</h1>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div style="height: 100vh; width: 100vw;">
+				<img class="section-bg-image" src="img/header.jpg" alt="">
+			</div>
+			
+        </div>
+
+        <!-- "Discover Our Expertise" section. Also blurs the upper header -->
+        <div  class="d-flex justify-content-center" style="padding: 0px; margin-bottom: 0px; width:100%;">
+			<div class="normal-section-header-div" style="height: 15vh;">
+				<table style="position: absolute; height: 100%; width: 100%;">
+					<tbody>
+						<tr>
+							<td class="align-middle" style="text-align:center;">
+								<h2 id="subheader-text">Discover our Expertise</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+            </div>
+        </div>
+		
+		
+        <!-- Expertise Section -->
+        <div  class="d-flex justify-content-center" style="padding-top: 10px; padding-bottom: 10px; background-color: black; width:100%;">
+			<div class="section-bg-div" style="height: 50vh;">
+				<!-- DESKTOP VERSION: 3 cols, 2 rows-->
+				<table class="delete-if-mobile standard-table" style="layout: fixed; position: absolute; height: 100%; width: 100%; visibility: visible;">
+					<tbody>
+						<tr>
+							<td class="align-middle" style="text-align:center;">
+								<img class="expertise-image" src="img/technology-support.png">
+							</td>
+							<td class="align-middle" style="text-align:center;">
+								<img class="expertise-image" src="img/strategic-planning.png">
+							</td>
+							<td class="align-middle" style="text-align:center;">
+								<img class="expertise-image" src="img/development-design.png">
+							</td>
+						</tr>
+						<tr>
+							<td class="align-middle" style="text-align:center;">
+								<h2 id="subsubheader-text">Technology Support</h2>
+							</td>
+							<td class="align-middle" style="text-align:center;">
+								<h2 id="subsubheader-text">Strategic Planning</h2>
+							</td>
+							<td class="align-middle" style="text-align:center;">
+								<h2 id="subsubheader-text">Development & Design</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<!-- MOBILE VERSION: 3 rows, 2 cols-->
+				<table class="view-if-mobile standard-table" style="position: absolute; height: 100%; width: 100%; visibility: hidden; padding: 0px;">
+					<tbody>
+						<tr>
+							<td class="align-middle" style="text-align:center;">
+								<img class="expertise-image" src="img/technology-support.png">
+							</td>
+							<td class="align-middle" style="padding-right: 15px; text-align:center;word-wrap: break-word">
+								<h2 id="subsubheader-text">Technology Support</h2>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-middle" style="padding-right: 15px;text-align:center;word-wrap: break-word">
+								<img class="expertise-image" src="img/strategic-planning.png">
+							</td>
+							<td class="align-middle" style="padding-right: 15px;text-align:center;word-wrap: break-word">
+								<h2 id="subsubheader-text">Strategic Planning</h2>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-middle" style="text-align:center;">
+								<img class="expertise-image" src="img/development-design.png">
+							</td>
+							<td class="align-middle" style="text-align:center;">
+								<h2 id="subsubheader-text">Development & Design</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+            </div>
+        </div>
+		
+        <!-- Section Header for "Meet our Partners" -->
+        <div  class="d-flex justify-content-center" style="padding: 0px; background-color: black; width:100%;height: 40vh">
+			<table style="position: absolute; height: 40vh; width: 100%;">
+				<tbody>
+					<tr>
+						<td class="align-middle" style="text-align:center;">
+							<h3 id="subheader-text">Meet Our Partners</h1>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            <img class="section-bg-image" style="height: 40vh;" src="img/globe.jpg" alt="">
+        </div>
+		
+        <!-- Cigent Section -->
+        <div  class="d-flex justify-content-center" style="padding: 0px; background-color: black; width:100%;">
+		
+			<div class="section-bg-div" style="height: 100vh; padding-top: 1px; padding-bottom: 1px;">
+				<table style="position: absolute; height: 100%; width: 100%;">
+					<tbody>
+						<tr>
+							<td class="align-middle delete-if-mobile" style="text-align:center;">
+								<img class="partners-side-image delete-if-mobile" src="img/fingerprint.jpg" alt="">
+							</td>
+							<td class="align-middle" style="text-align:center; padding: 10px;">
+								<h3 id="subsubheader-text">Introducing Cigent Dynamic Data Defense Engine (D3E) </h3>
+								<br><br>
+								<p style="color:white; font-size: 2vw">
+								Cigent’s Zero Trust approach to endpoint data protection ensures that all sensitive files, whether live or encrypted, are protected at all times, even when your standard cybersecurity protections are bypassed or your credentials are compromised.
+								</p>
+								<br><br>
+								<button type="button" onclick="window.open('https://www.cigent.com/why-cigent')" class="btn btn-outline-light">Read More</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+        </div>
+		
+		
+        <!-- D8 AI Section -->
+        <div  class="d-flex justify-content-center" style="padding: 0px; background-color: black; width:100%;">
+		
+			<div class="section-bg-div" style="height: 100vh; padding-top: 1px; padding-bottom: 1px;">
+				<table style="position: absolute; height: 100%; width: 100%;">
+					<tbody>
+						<tr>
+							<td class="align-middle delete-if-mobile" style="text-align:center;">
+								<img class="partners-side-image delete-if-mobile" src="img/ai.jpg" alt="">
+							</td>
+							<td class="align-middle" style="text-align:center; padding: 10px;">
+								<h3 id="subsubheader-text">Augment your Business with Artificial Intelligence</h3>
+								<br><br>
+								<p style="color:white; font-size: 2vw">
+								Join D8AI and upgrade your business with cutting edge AI technologies. Drive your productivity up with customised predictive and natural language engines.
+								</p>
+								<br><br>
+								<button type="button" onclick="window.open('https://www.d8ai.com/index-en/#aboutd8ai')" class="btn btn-outline-light">Read More</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+        </div>
+		
+		
+        <!-- Section Header for "Contact Us" -->
+        <div class="d-flex justify-content-center" style="padding: 0px; background-color: black; width:100%;height: 40vh">
+			<table class="standard-table" style=" visibility: visible; position: absolute; height: 40vh; width: 100%;">
+				<tbody>
+					<tr>
+						<td class="align-middle" style="text-align:center;">
+							<h3 id="subsubheader-text">Contact Us Today</h3>
+						</td>
+						<td class="align-middle" style="text-align:center;">
+							<p style="color:white; font-size: 1.5vw;">
+								1 Coleman Street #10-06 The Adelphi
+								<br>
+								bernard@wedata.com.sg
+								<br>
+								+6569142985
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/mobile-adapter.js"></script>
+        <script src="js/chatbot-handler.js"></script>
+
+    </body>
+
+</html>
